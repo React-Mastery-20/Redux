@@ -1,7 +1,7 @@
 import { INCREMENT, DECREMENT, RESET } from "./actionTypes.js";
 
-const increment = ()=>{
-    return {type: INCREMENT}
+const increment = (value)=>{
+    return {type: INCREMENT, payload:value }
 }
 
 const decrement = ()=>{

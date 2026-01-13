@@ -5,6 +5,8 @@ import { increment,decrement,reset } from "./redux/actions/counterActionCreator.
 
 console.log("init", store.getState());
 
-store.dispatch(increment());
+store.dispatch(increment(100));
 
 console.log("2nd", store.getState());
+store.dispatch(increment(500));
+console.log("3nd", store.getState());
